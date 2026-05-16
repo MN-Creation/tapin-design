@@ -23,7 +23,7 @@ The TapIn brand spans two surfaces (interpreted from the brand brief — no code
 | Codebase | — | ❌ not provided |
 | Figma | — | ❌ not provided |
 | Slide decks | — | ❌ not provided |
-| Logo / brand marks | — | ❌ not provided — placeholders generated and flagged |
+| Logo / brand marks | `assets/tapin-combo-H-tHeel.svg`, `assets/tapin-mark-tHeel.svg` | ✅ provided by Director (2026-05-16) — combo (mark + wordmark) and mark-only variants of the T-heel putter mark |
 | Photography | — | ❌ not provided — placeholders only |
 
 Because no codebase, Figma, or visual assets were attached, this system is **interpretive**: it commits to a strong direction inferred from the brand brief and from adjacent reference brands (LEAP 71, Hadrian, Scotty Cameron, modern engineering-software UI). Treat every visual decision here as a draft for the team to confirm or override. See **"Caveats & substitutions"** at the bottom.
@@ -224,11 +224,10 @@ Custom engineering glyphs (mass center, moment arrow, isoline contour, modal sha
 
 These are the places this system is making a guess. Confirm or replace.
 
-1. **Logo is user-supplied** — combo lockup of a geometric putter-heel mark above the Inter Bold wordmark. The mark depicts a putter viewed from the heel: horizontal head bar + vertical shaft.
-   - `assets/logo-tapin.svg` — combo lockup (mark + wordmark), `currentColor`. Use this in most contexts.
-   - `assets/logo-tapin-mark.svg` — mark only, for compact / small contexts (app icon, favicon, social avatar).
-   - `assets/logo-tapin-wordmark.svg` — wordmark only, for tight horizontal chrome (nav, topbar).
-   - `assets/logo-tapin-combo.svg` and `assets/logo-tapin-original.svg` — preserved originals with literal `#0A0A0A` fills.
+1. **Logo is Director-supplied (official, as of 2026-05-16)** — combo lockup of a geometric putter-heel mark above the wordmark. The mark depicts a T-heel putter viewed from the heel: horizontal head bar + vertical shaft.
+   - `assets/tapin-combo-H-tHeel.svg` — **official** combo lockup (mark + wordmark, "TapIn"), literal `#0A0A0A` fills. Use this in most contexts.
+   - `assets/tapin-mark-tHeel.svg` — **official** mark only, for compact / small contexts (app icon, favicon, social avatar).
+   - `assets/logo-tapin.svg`, `assets/logo-tapin-mark.svg`, `assets/logo-tapin-wordmark.svg`, `assets/logo-tapin-combo.svg`, `assets/logo-tapin-original.svg` — earlier interpretive placeholders kept for reference; prefer the `tHeel` files above for any new work.
 2. **No real product photos / CAD renders** — visualizations in cards and UI kits are SVG-generated approximations (isoline maps, wireframes). Replace with actual engine output.
 3. **Fonts are open-source** — Inter and IBM Plex Mono load from Google Fonts. If the team has licensed display/UI fonts, drop them into `fonts/` and update the `@font-face` block in `colors_and_type.css`.
 4. **Icon set is Lucide via CDN** — the canonical TapIn set could be tuned thinner. Custom engineering glyphs live in `assets/glyphs/`.
@@ -245,10 +244,12 @@ SKILL.md                     — Agent Skills entry point
 colors_and_type.css          — design tokens (CSS variables) + font @font-face
 fonts/                       — webfonts (Inter, IBM Plex Mono — Google Fonts)
 assets/
-  logo-tapin.svg             — combo lockup (mark + wordmark), currentColor
-  logo-tapin-mark.svg        — putter-heel mark only
-  logo-tapin-wordmark.svg    — Inter Bold wordmark only
-  logo-tapin-combo.svg       — combo lockup, literal #0A0A0A
+  tapin-combo-H-tHeel.svg    — OFFICIAL combo lockup (mark + wordmark), Director-supplied 2026-05-16
+  tapin-mark-tHeel.svg       — OFFICIAL mark only, Director-supplied 2026-05-16
+  logo-tapin.svg             — placeholder combo lockup (mark + wordmark), currentColor
+  logo-tapin-mark.svg        — placeholder putter-heel mark only
+  logo-tapin-wordmark.svg    — placeholder Inter Bold wordmark only
+  logo-tapin-combo.svg       — placeholder combo lockup, literal #0A0A0A
   logo-tapin-original.svg    — original supplied wordmark
   glyphs/                    — custom engineering glyphs (SVG)
   imagery/                   — placeholder CAD/isoline visuals
